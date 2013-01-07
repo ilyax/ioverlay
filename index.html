@@ -1,0 +1,91 @@
+﻿<!--// Ioverlay
+//
+// Copyright © Hackafortani, 2013
+// Developed by Ilyas Kolasinac Osmanogullari || http://www.ilyax.com
+// http://www.hackafortanfoni.com || http://www.alafortanfoni.com-->
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta name="robots" content="index, follow" />
+    <meta name="robots" content="all" />
+    <meta property="og:image" content="http://ilyax.com/Content/themes/ilogo.jpg" />
+    <meta property="og:site_name" content="Iblox - ilyax.com" />
+    <meta property="og:type" content="blog" />
+    <title>IOverlay</title>
+    <style>
+        .box1 {
+            -moz-box-shadow: 0px 0px 10px 7px #da8888;
+            -webkit-box-shadow: 0px 0px 10px 7px #da8888;
+            box-shadow: 0px 0px 10px 7px #da8888;
+            width: 250px;
+            height: 250px;
+            background: none repeat scroll 0 0 #DDDDDD;
+        }
+
+        .myButton {
+            -moz-box-shadow: inset 0px 1px 0px 0px #fff6af;
+            -webkit-box-shadow: inset 0px 1px 0px 0px #fff6af;
+            box-shadow: inset 0px 1px 0px 0px #fff6af;
+            background: -webkit-gradient(linear, left top, left bottom, color-stop(0.05, #ffec64), color-stop(1, #ffab23));
+            background: -moz-linear-gradient(top, #ffec64 5%, #ffab23 100%);
+            background: -webkit-linear-gradient(top, #ffec64 5%, #ffab23 100%);
+            background: -o-linear-gradient(top, #ffec64 5%, #ffab23 100%);
+            background: -ms-linear-gradient(top, #ffec64 5%, #ffab23 100%);
+            background: linear-gradient(to bottom, #ffec64 5%, #ffab23 100%);
+            filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#ffec64', endColorstr='#ffab23',GradientType=0);
+            background-color: #ffec64;
+            -moz-border-radius: 6px;
+            -webkit-border-radius: 6px;
+            border-radius: 6px;
+            border: 1px solid #ffaa22;
+            display: inline-block;
+            color: #333333;
+            font-family: arial;
+            font-size: 15px;
+            font-weight: bold;
+            padding: 6px 24px;
+            text-decoration: none;
+            text-shadow: 0px 1px 0px #ffee66;
+            margin-top: 125px;
+            margin-left: 92px;
+        }
+
+            .myButton:hover {
+                background: -webkit-gradient(linear, left top, left bottom, color-stop(0.05, #ffab23), color-stop(1, #ffec64));
+                background: -moz-linear-gradient(top, #ffab23 5%, #ffec64 100%);
+                background: -webkit-linear-gradient(top, #ffab23 5%, #ffec64 100%);
+                background: -o-linear-gradient(top, #ffab23 5%, #ffec64 100%);
+                background: -ms-linear-gradient(top, #ffab23 5%, #ffec64 100%);
+                background: linear-gradient(to bottom, #ffab23 5%, #ffec64 100%);
+                filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#ffab23', endColorstr='#ffec64',GradientType=0);
+                background-color: #ffab23;
+            }
+
+            .myButton:active {
+                position: relative;
+                top: 1px;
+            }
+    </style>
+
+    <script src="http://code.jquery.com/jquery-1.8.3.min.js"></script>
+    <script src="Scripts/ioverlay-min.js"></script>
+    <script type="text/javascript">
+        $(document).ready(function () {
+            $('#btnDemo').click(function (e) {
+                $('#divDemo').ioverlay();
+            });
+
+            $('#btnClose').click(function (e) {
+                $('#divDemo').ioverlay('close');
+            });
+
+        });
+    </script>
+</head>
+<body>
+    <a href="#!" id="btnDemo">IOverlay Demo</a>
+    <div id="divDemo" style="display: none;" class="box1">
+        <a id="btnClose" class="myButton" href="#!">Close</a>
+    </div>
+</body>
+</html>
