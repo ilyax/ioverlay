@@ -4,7 +4,8 @@ ioverlay
 jquery tiny lightbox
 
   $(document).ready(function () {
-            $('#btnOpenObj').click(function (e) {
+           
+           $('#btnOpenObj').click(function (e) {
                 $('#yourDemoDiv').ioverlay();
             });
 
@@ -12,7 +13,9 @@ jquery tiny lightbox
                 $('#yourDemoDiv').ioverlay('close');
             });
 
-        });
+        }
+    
+    );
 
 
 demo 
