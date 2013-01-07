@@ -4,7 +4,8 @@ ioverlay
 jquery tiny lightbox
 
   $(document).ready(function () 
-  {
+  
+        {
   
            $('#btnOpenObj').click(function (e) {
                 $('#yourDemoDiv').ioverlay();
